@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Outis - The Meaning of Nobody</title>
+</head>
+
+<body id="top">
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <div class="container site-nav">
+            <ul>
+                <li><a href="#plot">Plot</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#idea">AI Idea</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Website all about Outis</h1>
+            <p style="font-size: 1.25rem; color: var(--text-muted);">Exploring the philosophy of "No one"</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Plot / Meaning Section -->
+        <section id="plot" class="section">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">Οὖτις - The Meaning of "Nobody"</h2>
+                </div>
+
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <p>
+                        <strong style="color: var(--primary-dark);">Outis</strong> (Οὖτις) is an Ancient Greek word and
+                        name meaning <strong>"nobody"</strong> or <strong>"no one"</strong>.
+                    </p>
+
+                    <div class="highlight-box">
+                        <p>
+                            It is famously a pseudonym used by the Greek hero <strong>Odysseus</strong> in Homer's epic
+                            poem, <em>The Odyssey</em>.
+                            When trapped in the cave of the Cyclops <strong>Polyphemus</strong>, Odysseus tells the
+                            giant his name is "Nobody."
+                            After Odysseus blinds him, the other Cyclopes ask who is harming him, and Polyphemus shouts
+                            that
+                        <blockquote>"Nobody is murdering me by craft"</blockquote>
+                        so they do not come to his aid. This clever wordplay, a pun on the Greek word <em>mêtis</em>
+                        meaning "cunning intelligence," is a classic example of Odysseus's strategic mind.
+                        </p>
+                    </div>
+
+                    <p>
+                        The name has since been adopted as a pseudonym by various modern artists and writers to hide
+                        their identities, and for characters in fiction, such as in the TV series <em>Prison Break</em>
+                        and the game <em>Limbus Company</em>.
+                    </p>
+
+                    <div class="text-center" style="margin-top: 2rem;">
+                        <a href="https://en.wikipedia.org/wiki/Outis" target="_blank" class="gemini-btn"
+                            style="font-size: 1rem; padding: 0.5rem 1.5rem; background: var(--primary-color); color: white;">
+                            Read more on Wikipedia
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests Grid Section -->
+        <section id="interests" class="section" style="background-color: #f9fafb;">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">Inspirations & Interests</h2>
+                </div>
+
+                <div class="card-grid">
+
+                    <!-- Crafting Card -->
+                    <div class="card" id="crafting">
+                        <a href="https://www.youtube.com/@lesnoy_craft8607" target="_blank">
+                            <img src="https://yt3.googleusercontent.com/sEeDMLmzg48s4jzc78cERxmGdyJyEYR6-GIGRWZAFvz2JUhwpdx-A19qBP8PNwP3ZaYErSQrWNs=s160-c-k-c0x00ffffff-no-rj"
+                                alt="Lesnoy Craft" class="avatar">
+                            <h3>Lesnoy Craft</h3>
+                        </a>
+                        <p style="margin-top: 1rem; flex-grow: 1;">
+                            The intricate, highly detailed, and patient nature of <strong>Lesnoy Craft’s</strong>
+                            projects reflects the strategic planning required for a successful scheme. Every cut and
+                            assembly is a calculated move.
+                        </p>
+                    </div>
+
+                    <!-- Music Card -->
+                    <div class="card" id="Music">
+                        <a href="https://www.youtube.com/@NeyDefteri" target="_blank">
+                            <img src="https://yt3.googleusercontent.com/IyqfRFxgELNwNvD7_A7bS-XpQrPd1uVCNkaqsCXuumM7OV9_o7n7uUu1w5locSiPw3b2QFP6=s160-c-k-c0x00ffffff-no-rj"
+                                alt="Ney Defteri" class="avatar">
+                            <h3>Ney Defteri</h3>
+                        </a>
+                        <p style="margin-top: 1rem; flex-grow: 1;">
+                            A channel for relaxation and deep thinking mode, providing the mental space needed for
+                            <em>mêtis</em>.
+                        </p>
+                    </div>
+
+                    <!-- Cars Card -->
+                    <div class="card" id="Cars">
+                        <a href="https://www.youtube.com/@BMW" target="_blank">
+                            <img src="https://yt3.googleusercontent.com/PaPHtEuh6Ga57vCyZsoNFtYmhTZnuDWsEGmSwewy6KysOZFLMf1x6WGRjSuYfRnyGUsiu4I7=s160-c-k-c0x00ffffff-no-rj"
+                                alt="BMW" class="avatar">
+                            <h3>BMW Official</h3>
+                        </a>
+                        <p style="margin-top: 1rem; flex-grow: 1;">
+                            Exploring technical specifications and engineering excellence.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Idea Section -->
+        <section id="idea" class="section">
+            <div class="container text-center">
+                <h2 class="section-title">Strategic Idea Generator</h2>
+                <p style="margin-bottom: 2rem;">Need a cunning plan? Consult the oracle.</p>
+
+                <button id="generateIdeaBtn" class="gemini-btn" onclick="generateStrategicIdea()">
+                    Get random solution for your problems
+                </button>
+
+                <div id="ideaOutput"
+                    style="max-width: 600px; margin: 2rem auto 0; text-align: left; padding: 1.5rem; background: #111827; border-radius: var(--radius-lg); color: white; min-height: 100px;">
+                    <p class="text-center" style="color: #9ca3af; font-style: italic;">
+                        Press the button above to generate a cunning and detailed crafting project idea powered by
+                        Outis.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="container back-to-top">
+        <a href="#top">↑ Back to Top</a>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
